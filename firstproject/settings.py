@@ -26,7 +26,7 @@ SECRET_KEY = '3$a#pvv&42hmy0rcoqv%w3in%+s!ucc1dq%by4x#ik)e(00tb1'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['31a680cdf83849a4b648c1932a84f42e.vfs.cloud9.eu-west-1.amazonaws.com']
-ALLOWED_HOSTS = ['ec2-3-254-231-125.eu-west-1.compute.amazonaws.com']
+ALLOWED_HOSTS = ['ec2-54-247-227-79.eu-west-1.compute.amazonaws.com']
 
 
 # Application definition
