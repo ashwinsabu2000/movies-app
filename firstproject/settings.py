@@ -25,14 +25,19 @@ SECRET_KEY = '3$a#pvv&42hmy0rcoqv%w3in%+s!ucc1dq%by4x#ik)e(00tb1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['31a680cdf83849a4b648c1932a84f42e.vfs.cloud9.eu-west-1.amazonaws.com']
-ALLOWED_HOSTS = ['x23196505ash2.eba-zmjevmtv.eu-west-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['31a680cdf83849a4b648c1932a84f42e.vfs.cloud9.eu-west-1.amazonaws.com']
+# ALLOWED_HOSTS = ['x23196505ash2.eba-zmjevmtv.eu-west-1.elasticbeanstalk.com']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://31a680cdf83849a4b648c1932a84f42e.vfs.cloud9.eu-west-1.amazonaws.com'
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'movies.apps.MoviesConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,3 +125,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/'
