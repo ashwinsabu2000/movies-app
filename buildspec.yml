@@ -12,6 +12,7 @@ pre_build:
         - python --version
         - pylint $CODEBUILD_SRC_DIR/*.py
         - pylint $CODEBUILD_SRC_DIR/firstproject/*.py
+        - pylint $CODEBUILD_SRC_DIR/movies/*.py
 artifacts:
     files:
         - '**/*'
