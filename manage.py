@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#!/usr/bin/env python3
+"""This script runs """
 import os
 import sys
 
