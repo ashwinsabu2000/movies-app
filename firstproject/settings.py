@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['x23196505ash2.eba-zmjevmtv.eu-west-1.elasticbeanstalk.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    '*'
+    'https://31a680cdf83849a4b648c1932a84f42e.vfs.cloud9.eu-west-1.amazonaws.com'
 ]
 
 

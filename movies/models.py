@@ -11,3 +11,7 @@ class Movie(models.Model):
 
     def __str__(self):
         return self.title + " - " + self.director
+
+
+class CSVData(models.Model):
+    csv_file = models.FileField(upload_to='csv_files/')
