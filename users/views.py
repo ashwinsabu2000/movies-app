@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserSignUpForm
 
+
 def sign_up(request):
     if request.method == "POST":
         form = UserSignUpForm(request.POST)
@@ -10,5 +11,6 @@ def sign_up(request):
             un = form.cleaned_data.get('username')
             messages.success(request, 'Account created for {}.'.format(un))
             return redirect('sign_in')
-    form = UserSignUpForm()
+    elif request.method == "GET":
+        form = UserSignUpForm()
     return render(request, 'users/signup.html', {'form': form})
