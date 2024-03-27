@@ -9,8 +9,5 @@ def index(request):
     return render(request, 'movies/index.html', context)
     
 def show(request, movie_id):
-    try:
-        movie = Movie.objects.get(pk=movie_id)
-    except:
-        raise Http404("Movie does not exist")
+    movie = Movie.objects.get(pk=movie_id)
     return render(request, 'movies/show.html', {'movie': movie})
